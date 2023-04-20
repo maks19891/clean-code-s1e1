@@ -22,9 +22,9 @@ var createNewTaskElement=function(taskString){
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
     //label
-    var label=document.createElement("label");//label
+    var label=document.createElement("task-label");//label
     //input (text)
-    var editInput=document.createElement("input");//text
+    var editInput=document.createElement("task-input");//text
     //button.edit
     var editButton=document.createElement("button");//edit button
 
@@ -102,8 +102,6 @@ var editTask=function(){
     listItem.classList.toggle("editMode");
 };
 
-
-//Delete task.
 var deleteTask=function(){
     console.log("Delete Task...");
 
